@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+function handleRunTraining(event) {
+  console.log('Run Training');
+}
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={handleRunTraining} >Click me </button><br />
       </header>
     </div>
   );
