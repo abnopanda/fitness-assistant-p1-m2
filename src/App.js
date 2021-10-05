@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import * as tf from '@tensorflow/tfjs';
 
 function handleRunTraining(event) {
   console.log('Run Training');
+  var matrix = tf.tensor([1, 2, 3, 4], [2, 2]);
+  console.log(matrix);
 }
 function App() {
   return (
